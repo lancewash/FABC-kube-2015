@@ -1,0 +1,71 @@
+
+
+.intro {
+  padding: 5em 0 0;
+
+  .row {
+    margin-bottom: $baseLineHeight * 2em;
+  }
+  
+  h1, h2 {
+    margin-bottom: .5em;
+    text-align: center;
+    text-transform: uppercase;
+
+    &::before {
+      border-bottom: 2px solid #D97B29;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 275px;
+      position: absolute;
+      width: 50px;
+    }
+  }
+}
+.logo {
+  background: url("../img/fabc-logo.png") no-repeat;
+  display: block;
+  height: 258px;
+  left: 0;
+  margin-top: 15px;
+  position: absolute;
+  text-indent: -999999em;
+  width: 212px;
+  z-index: 30;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  
+  &:hover {
+    margin-top: 18px;
+  }
+}
+//.large-header {
+//  font-size: 130%;
+//}
+//.small-header {
+//  font-size: 65%;
+//}
+.p-1 {
+  background: url("../img/trans-80.png"),
+  url("../img/background/fabc-bg-2.jpg");
+  background-repeat: repeat, no-repeat;
+  //height: 360px;
+}
+.p-2 {
+  background: url("../img/trans-80.png"),
+  url("../img/banner-img/banner-img-church.jpg");
+  background-repeat: repeat, no-repeat;
+  height: 400px;
+}
+[class*="p-"] {
+
+  .column {
+    padding-top: 3em;
+  }
+
+}

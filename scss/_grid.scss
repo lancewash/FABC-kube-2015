@@ -2,7 +2,11 @@
 -----------------------------------------------------------------------------*/
 .container,
 .row {
-    @include clearfix;
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 .container { /* it's the trick to not collapse padding-top in the child element */
     padding-top: 1px;
@@ -10,6 +14,9 @@
 }
 .row {
     @include rem('margin-bottom', $baseLineInEms);
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .width-100, .unit-100 { width: 100%;  }
@@ -57,21 +64,21 @@ select.unit-100   { width: 99.4%; }
         margin-left: 0;
     }
 }
-.row .unit-90 { @include columns(9, 10); }
-.row .unit-80 { @include columns(4, 5); }
-.row .unit-75 { @include columns(3, 4); }
-.row .unit-70 { @include columns(7, 10); }
-.row .unit-66 { @include columns(2, 3); }
-.row .unit-65 { @include columns(2, 3); }
-.row .unit-60 { @include columns(3, 5); }
-.row .unit-50 { @include column(2); }
-.row .unit-40 { @include columns(2, 5); }
-.row .unit-35 { @include column(3); }
-.row .unit-33 { @include column(3); }
-.row .unit-30 { @include columns(3, 10); }
-.row .unit-25 { @include column(4); }
-.row .unit-20 { @include column(5); }
-.row .unit-10 { @include columns(1, 10); }
+.row .unit-90 { width: 89.7%; }
+.row .unit-80 { width: 79.4%; }
+.row .unit-75 { width: 74.25%; }
+.row .unit-70 { width: 69.1%; }
+.row .unit-66 { width: 65.66666666666666%; }
+.row .unit-65 { width: 65.66666666666666%; }
+.row .unit-60 { width: 58.800000000000004%; }
+.row .unit-50 { width: 48.5%; }
+.row .unit-40 { width: 38.2%; }
+.row .unit-35 { width: 31.333333333333332%; }
+.row .unit-33 { width: 31.333333333333332%; }
+.row .unit-30 { width: 27.9%; }
+.row .unit-25 { width: 22.75%; }
+.row .unit-20 { width: 17.6%; }
+.row .unit-10 { width: 7.3%; }
 
 .push-90,
 .push-80,

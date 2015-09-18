@@ -6,8 +6,11 @@ $codeFontFamily: Menlo, Monaco, Consolas, "Courier New", monospace;
 
 // Base color
 $backgroundBody: #fff;
-$colorBody: #333;
+$colorBody: rgba(0,0,0,.75);
 $colorHeadings: #222;
+$colorBurgundy: #3c0308;
+$color-highlight: #D97B29;
+$color-highlight-dark: #a82d11;
 
 // Grid
 $gridWidth: 1000;
@@ -49,8 +52,8 @@ $colorGreen: #159776;
 $colorYellow: #fddc43;
 
 // LinkColor
-$colorLink: #3570c3;
-$colorLinkHover: $colorRed;
+$colorLink: rgba(0,0,0,.5);;
+$colorLinkHover: rgba(0,0,0,.9);
 
 // Forms
 $fieldsBottom: 1.6em;

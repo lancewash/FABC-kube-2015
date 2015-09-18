@@ -242,3 +242,41 @@
         width: auto;
     }
 }
+
+
+/*
+Navigation Styles
+*/
+.nav-top {
+    padding: .5em 0;
+    nav, p {
+        margin-bottom: 0;
+    }
+    p {
+        font-size: .8rem;
+    }
+}
+.nav-main {
+    background: $colorBurgundy;
+    height: 70px;
+
+    a {
+        color: rgba(255, 255, 255, 1);
+        text-transform: uppercase;
+        border-bottom: 2px solid rgba(255, 255, 255, 0);
+        color: white;
+        padding: 1.5em 0;
+        text-transform: uppercase;
+    }
+    .img-link {
+        margin-left: 250px;
+
+        img {
+            padding: 1.65em 0;
+        }
+    }
+    .navbar {
+        margin-right: 1.5em;
+        margin-bottom: 0;
+    }
+}

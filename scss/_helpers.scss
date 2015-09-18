@@ -60,9 +60,11 @@
     float: left;
 }
 .right {
-    float: right;
+    float: right !important;
 }
-
+.circular {
+    border-radius: 500rem;
+}
 
 /* Responsive embedded objects */
 .video-wrapper {
