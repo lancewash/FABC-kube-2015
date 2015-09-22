@@ -10,6 +10,8 @@
 }
 .container { /* it's the trick to not collapse padding-top in the child element */
     padding-top: 1px;
+    padding-left: 2em;
+    padding-right: 2em;
     margin-top: -1px;
 }
 .row {
@@ -121,6 +123,10 @@ select.unit-100   { width: 99.4%; }
 .unit-centered {
     float: none !important;
     margin: 0 auto !important;
+
+    .center {
+        margin: 0;
+    }
 }
 
 .unit-padding {
@@ -146,22 +152,39 @@ select.unit-100   { width: 99.4%; }
 }
 
 .split .unit-90,
-.split .unit-80,
-.split .unit-75,
-.split .unit-70,
-.split .unit-66,
-.split .unit-65,
-.split .unit-60,
-.split .unit-50,
-.split .unit-40,
-.split .unit-35,
-.split .unit-33,
-.split .unit-30,
-.split .unit-25,
-.split .unit-20,
-.split .unit-10 {
+ .split .unit-80,
+ .split .unit-75,
+ .split .unit-70,
+ .split .unit-66,
+ .split .unit-65,
+ .split .unit-60,
+ .split .unit-50,
+ .split .unit-40,
+ .split .unit-35,
+ .split .unit-33,
+ .split .unit-30,
+ .split .unit-25,
+ .split .unit-20,
+ .split .unit-10 {
+     margin-left: 0;
+ }
+/*.split.unit-90,
+.split.unit-80,
+.split.unit-75,
+.split.unit-70,
+.split.unit-66,
+.split.unit-65,
+.split.unit-60,
+.split.unit-50,
+.split.unit-40,
+.split.unit-35,
+.split.unit-33,
+.split.unit-30,
+.split.unit-25,
+.split.unit-20,
+.split.unit-10 {
     margin-left: 0;
-}
+}*/
 .split .unit-90 { width: 90%;   }
 .split .unit-80 { width: 80%;   }
 .split .unit-75 { width: 75%;   }
@@ -202,7 +225,7 @@ select.unit-100   { width: 99.4%; }
     .row .unit-25,
     .row .unit-20,
     .row .unit-10 {
-        width: 100%;
+        width: auto;
         float: none;
         margin-left: 0;
         @include rem('margin-bottom', $baseLineInEms);

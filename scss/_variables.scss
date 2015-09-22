@@ -1,13 +1,14 @@
 // Font
-$baseFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$headingsFontFamily: $baseFontFamily;
+$baseFontFamily: 'montserratlight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headingsFontFamily: 'montserratlight', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $controlsFontFamily: $baseFontFamily;
 $codeFontFamily: Menlo, Monaco, Consolas, "Courier New", monospace;
+$mainNavFontFamily: 'montserratbold';
 
 // Base color
 $backgroundBody: #fff;
 $colorBody: rgba(0,0,0,.75);
-$colorHeadings: #222;
+$colorHeadings: #344B56;
 $colorBurgundy: #3c0308;
 $color-highlight: #D97B29;
 $color-highlight-dark: #a82d11;
@@ -23,9 +24,9 @@ $baseLine: $baseFontSize * $baseLineHeight;
 $baseLineInEms: $baseLine / $baseFontSize;
 
 // Heading
-$h1FontSize: $baseFontSize + 22px; // 36px
-$h2FontSize: $baseFontSize + 16px; // 30px
-$h3FontSize: $baseFontSize + 10px; // 24px
+$h1FontSize: $baseFontSize + 14px; // 36px
+$h2FontSize: $baseFontSize + 8px; // 30px
+$h3FontSize: $baseFontSize + 6px; // 24px
 $h4FontSize: $baseFontSize + 4px; // 18px
 $h5FontSize: $baseFontSize + 0px; // 14px
 $h6FontSize: $baseFontSize - 2px; // 12px

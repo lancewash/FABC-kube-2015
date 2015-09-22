@@ -1,14 +1,61 @@
 
 
-.intro {
-  padding: 5em 0 0;
+.content-wrap {
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &:not([class^="p-"]) {
+    padding-top: 5em;
+  }
 
   .row {
     margin-bottom: $baseLineHeight * 2em;
+    //margin-bottom: 3em;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    
+    &.hidden-links {
+      margin-bottom: 0;
+    }
+    .content-item {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5em;
+      
+      h2 {
+        text-align: left;
+      }
+      img {
+        @include rem('margin-bottom', $baseLineInEms);
+      }
+    }
+  }
+  h2 {
+    margin-bottom: 1em;
+    padding-bottom: .5em;
+    position: relative;
+    text-align: left;
+
+    &::before {
+      border-bottom: 2px solid #D97B29;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 0;
+      padding: .5em 0;
+      position: absolute;
+      width: 50px;
+    }
   }
   
-  h1, h2 {
-    margin-bottom: .5em;
+  h1 {
+    line-height: 1.5em;
+    //margin-bottom: 1em;
+    padding-bottom: .5em;
+    position: relative;
     text-align: center;
     text-transform: uppercase;
 
@@ -18,17 +65,27 @@
       content: "";
       display: block;
       height: 2px;
-      left: 275px;
+      margin: 0 auto;
+      /* left: 45%; */
+      right: 0;
+      left: 0;
       position: absolute;
-      width: 50px;
+      width: 10%;
     }
+  }
+}
+[class^="unit-"] {
+
+  &.content-item {
+    //min-height: 550px;
+    position: relative;
   }
 }
 .logo {
   background: url("../img/fabc-logo.png") no-repeat;
   display: block;
   height: 258px;
-  left: 0;
+  left: 2em;
   margin-top: 15px;
   position: absolute;
   text-indent: -999999em;
@@ -44,23 +101,25 @@
     margin-top: 18px;
   }
 }
-//.large-header {
-//  font-size: 130%;
-//}
-//.small-header {
-//  font-size: 65%;
-//}
+.large-header {
+  font-size: 175%;
+}
+.small-header {
+  display: block;
+  font-size: 75%;
+  line-height: 1.75;
+}
 .p-1 {
   background: url("../img/trans-80.png"),
-  url("../img/background/fabc-bg-2.jpg");
+  url("../img/background/fabc-bg-1.jpg");
   background-repeat: repeat, no-repeat;
-  //height: 360px;
+  //height: 200px;
 }
 .p-2 {
   background: url("../img/trans-80.png"),
   url("../img/banner-img/banner-img-church.jpg");
   background-repeat: repeat, no-repeat;
-  height: 400px;
+  //height: 200px;
 }
 [class*="p-"] {
 
@@ -68,4 +127,18 @@
     padding-top: 3em;
   }
 
+}
+[class^="blocks-"] {
+  
+  p {
+    font-size: .75rem;
+    line-height: 1.5;
+  }
+  //>li {
+  //  margin: 0 1%;
+  //}
+}
+.blocks-wrap {
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 3em 1.5em 0;
 }
